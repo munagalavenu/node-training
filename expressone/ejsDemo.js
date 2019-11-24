@@ -15,7 +15,7 @@ app.get('/',(req,res)=>{
         name:'babu',
         city:'Hyderbad'
     }); */
-    res.render('home');
+    res.render('home'); //helo
 });
 
 app.get('/search',(req,res)=>{
