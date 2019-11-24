@@ -1,0 +1,38 @@
+<h1>Car Catalog from DB</h1>
+<!-- <table>
+        <tr>
+            <td><a href="/">Home</a></td>
+            <td><a href="/cars">Cars</a></td>
+        </tr>
+    </table> -->
+<!-- make: "1Hyundai",
+        model: "1Grand i10",
+        variant: -->
+        <%- include('menu'); -%></div>
+
+
+<div class="row">
+    
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        
+        <table class="table table-hover">
+            <tbody>
+                    <%
+                    for(let i=0; i<cars.length;i++) {
+                    %>
+                    <tr>
+                        <th><%= cars[i].id %></th>
+                        <th><%= cars[i].make%></th>
+                    <th><%= cars[i].model%></th>
+                    <th><%= cars[i].variant%></th>
+                </tr>
+                    <%
+                    }
+                    %>
+            </tbody>
+        </table>
+        
+    </div>
+    
+</div>
+
